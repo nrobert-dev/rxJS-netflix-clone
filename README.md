@@ -7,7 +7,9 @@ is being streamed, while the rest of the movie data is generated upon starting t
 
 Contains the follwing :
  - mock login page with cancellable request
- - data loading
+ - fetching data
+ - loader implementation
+ - mock filtering through search, select or type change
  - user interaction with  movie cards
  - auto play for main movie with cover switch after x seconds
  - transition/cancel into movie streaming
