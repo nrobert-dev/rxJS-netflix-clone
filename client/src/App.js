@@ -15,7 +15,7 @@ import WatchPage from "./pages/WatchPage";
 
 function App() {
   return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
               <Route exact path="/" element={<Login />} />
               <Route path="/browse" element={<BrowsePage/>} />
