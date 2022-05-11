@@ -29,7 +29,7 @@ const Login = () => {
           tap((cancellation) => setLoader(!cancellation)),
           switchMap((cancellation) => {
               if(cancellation) return EMPTY;
-              return ajax({url : 'http://localhost:6767/login', responseType : 'text'})
+              return ajax({url : 'https://mock-streaming-netflix-clone.herokuapp.com/login', responseType : 'text'})
           }),
           map(responseObject => responseObject?.response),
           tap(() => {
