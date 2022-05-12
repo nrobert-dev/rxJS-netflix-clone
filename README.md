@@ -2,18 +2,20 @@
 
 # NetRXis - A Netflix Clone
 
-You can access it here.
-[NETFLIX RXJS CLONE](https://nrobert-dev.github.io/rxJS-netflix-clone/)
-
-Log in with any email and password, wait for a few seconds until the login request goes through (Heroku takes a few seconds to start) and then enjoy the Mock Netflix experience! 
-
 Built using React and RxJs to handle async events such as requests, streaming, user interactions. For the backend it's just a simple Express Server. The main watchable video
 is being streamed, while the rest of the movie data is generated upon starting the server.
 
 The frontend is hosted on github pages. The backend is a simple server that returns some data about the
 movies and is capable of streaming a simple short video.
 
+## How to acccess 
 
+You can access it here.
+[NETFLIX RXJS CLONE](https://nrobert-dev.github.io/rxJS-netflix-clone/)
+
+Log in with any email and password, wait for a few seconds until the login request goes through (Heroku takes a few seconds to start) and then enjoy the Mock Netflix experience! 
+
+## Features
 Contains the follwing :
  - mock login page with cancellable request
  - fetching data
