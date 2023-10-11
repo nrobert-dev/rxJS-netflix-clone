@@ -31,7 +31,7 @@ router.get('/list', (req,res) => {
 });
 
 router.get('/watch', (req, res) => {
-    const videoPath = `assets/Sintel.mp4`;
+    const videoPath = `assets/videoSource.mp4`;
     const videoStat = fs.statSync(videoPath);
     const fileSize = videoStat.size;
     const videoRange = req.headers.range;

@@ -29,7 +29,7 @@ const Login = () => {
           tap((cancellation) => setLoader(!cancellation)),
           switchMap((cancellation) => {
               if(cancellation) return EMPTY;
-              return ajax({url : 'https://mock-streaming-netflix-clone.herokuapp.com/login', responseType : 'text'})
+              return ajax({url : 'https://netflixcloneapi.onrender.com/login', responseType : 'text'})
           }),
           map(responseObject => responseObject?.response),
           tap(() => {
@@ -59,10 +59,15 @@ const Login = () => {
               {loader ? <BeatLoader css={`margin-bottom: 2px`} size={10} color={'white'}/> : 'Sign in'}
           </SignInButton>
             <CancelButton onClick={() => onCancelClick$.next(true)}>Cancel Request</CancelButton>
+            <div style={{width : '100%', color : 'white', textAlign : 'center', fontSize : '12px'}}>
+                {loader && <span>Please allow at least 20s-30s for the service to start. Thank you!</span>}
+            </div>
 
             <DetailText>
                 <span>NetRXIS © 2021</span>
-                <span>Need Help?</span>
+                <span>
+                    <a href={'http://localhost:3000/rxJS-netflix-clone/browse'}>Need Help?</a>
+                </span>
             </DetailText>
         </LoginWrapper>
       </div>

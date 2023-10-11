@@ -36,7 +36,7 @@ export const onType$ = typeSubject.pipe(
 
 export const browse$ = combineLatest([onSearch$, onSelect$, onType$]).pipe(
     tap(() => dispatch(setIsLoadingActionCreator(true))),
-    switchMap(([term,select,type]) => ajax.getJSON(`https://mock-streaming-netflix-clone.herokuapp.com/video/list?term=${term}&select=${select}&type=${type}`)),
+    switchMap(([term,select,type]) => ajax.getJSON(`https://netflixcloneapi.onrender.com/video/list?term=${term}&select=${select}&type=${type}`)),
     tap(() => dispatch(setIsLoadingActionCreator(false)),
 ));
 

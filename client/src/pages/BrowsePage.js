@@ -10,7 +10,9 @@ import {
     MoviesAreaWrapper
 } from "../styles/Main.styles";
 import {useNavigate} from "react-router-dom";
-import {BiInfoCircle, BsPlayFill, IoClose} from "react-icons/all";
+import {BiInfoCircle} from "react-icons/bi";
+import {BsPlayFill} from 'react-icons/bs';
+import {IoClose} from 'react-icons/io5';
 import MovieCard from "../components/MovieCard";
 import {fromEvent} from 'rxjs';
 import ShimmerCard from "../components/ShimmerCard";

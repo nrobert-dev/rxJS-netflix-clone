@@ -2,7 +2,7 @@ import React, {useEffect, useRef, useState} from 'react';
 import {fromEvent} from "rxjs";
 import {combineLatest, debounceTime, filter, map, merge,} from "rxjs/operators";
 import {CardWrapper, IconButton, MovieCardDetails, MovieImage, MovieName} from "../styles/Main.styles";
-import {BsHandThumbsDown, BsHandThumbsUp, BsPlayFill, BsPlus} from "react-icons/all";
+import {BsHandThumbsDown, BsHandThumbsUp, BsPlayFill, BsPlus} from "react-icons/bs";
 import {useStore} from "../data/hooks";
 import {setPreferenceActionCreator} from "../data/actions";
 import {playCountDown$} from "../data/observables";

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {BsHandThumbsUp, BsHandThumbsDown} from "react-icons/all";
+import {BsHandThumbsUp, BsHandThumbsDown} from "react-icons/bs";
 import {useStore} from "../data/hooks";
 
 const Wrapper = styled.div`

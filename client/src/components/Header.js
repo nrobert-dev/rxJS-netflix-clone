@@ -8,7 +8,7 @@ import {
     SideWrapper, UserIcon
 } from "../styles/Main.styles";
 import userImage from "../assets/userIcon.jpg"
-import {GoBell} from "react-icons/all";
+import {GoBell} from "react-icons/go";
 import Search from "./Search";
 import {onSelect$, onType$} from "../data/observables";
 import {useNavigate} from "react-router-dom";

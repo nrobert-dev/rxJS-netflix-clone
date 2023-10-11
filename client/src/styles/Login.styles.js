@@ -31,6 +31,15 @@ export const DetailText = styled.div`
     padding : 0px 15px;
     box-sizing: border-box;
     color : gray;
+  
+    a {
+      color : gray;
+      text-decoration: none;
+    }
+  
+    a:hover{
+      color : white;
+    }
 `;
 
 export const MainText = styled.div`

@@ -12,7 +12,7 @@ const MainVideo = styled.video`
 const WatchPage = () => {
     return(
         <Wrapper>
-            <MainVideo controls src={"https://mock-streaming-netflix-clone.herokuapp.com/video/watch"}/>
+            <MainVideo controls src={"https://netflixcloneapi.onrender.com/video/watch"}/>
         </Wrapper>
     )
 };
